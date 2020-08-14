@@ -49,7 +49,7 @@ if($method === 'get' || $method === 'GET') {
 
     } else {
 
-        $array['error'] = ' Não é permitido outro método além de GET';
+        $array['error'] = 'Não é permitido outro método além de GET';
 
     }
 
