@@ -13,7 +13,7 @@ DevsNotes é uma api, com a função de um caderno de anotações digital.
 
 ### Configure a conexão com o banco de dados notes.sql
 
-ˋˋˋ
+``` 
 <?php
 
 $pdo = new PDO("mysql:dbname=devnotes;host=localhost", 'root', '');
@@ -24,12 +24,11 @@ $array = [
     'result' => []
 ];
 
-ˋˋˋ
+```
 
 ### Dê as permissões de acesso para métodos e outros sites
 
-ˋˋˋ
-
+``` 
 <?php 
 
 // aqui fica  a permissão de acessos para apis e os métodos
@@ -41,7 +40,7 @@ header("Content-Type: application/json"); // sempre retorna um json
 echo json_encode($array);
 exit;
 
-ˋˋˋ
+``` 
 
 
 
