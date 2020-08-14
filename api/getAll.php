@@ -26,6 +26,9 @@ if($method === 'get' || $method === 'GET') {
                 'body' => $item['body']
             ];
         }
+    } else {
+
+        $array['error'] = 'Só permite o método GET';
     }
 }
 
