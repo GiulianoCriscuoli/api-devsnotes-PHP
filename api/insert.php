@@ -5,7 +5,7 @@ require('../config.php');
 $method = strtolower($_SERVER['REQUEST_METHOD']);
 
 
-if($method === 'post') {
+if($method === 'post' || $method === 'POST') {
 
     $title = filter_input(INPUT_POST, "title");
     $body = filter_input(INPUT_POST, "body");
